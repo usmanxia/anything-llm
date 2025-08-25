@@ -1,0 +1,22 @@
+{
+  "name": "anything-llm-desktop",
+  "version": "0.1.0",
+  "private": true,
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^28.2.3",
+    "electron-builder": "^24.6.0"
+  },
+  "build": {
+    "appId": "com.anythingllm.desktop",
+    "files": ["!node_modules/.cache"],
+    "directories": {
+      "buildResources": "build"
+    }
+  }
+}
